@@ -2,9 +2,9 @@
 
 **The fastest, most accurate proxy tester ever built. Test millions of proxies in seconds — and see exactly how good each one is.**
 
-Made by [HeroProxies.com](https://heroproxies.com) — the most cost-effective, high-quality wholesale proxies on the market.
+Made by [HeroProxies.com](https://heroproxies.com) — the most cost-effective, high-quality wholesale proxies on the market. Try them out today!
 
-![Hero Proxy Tester dashboard](dashboard.png)
+![Hero Proxy Tester dashboard](heroproxies-tester-screenshot.png)
 
 ---
 
@@ -16,7 +16,7 @@ Hero Proxy Tester answers the questions that actually matter:
 
 - **Does it work?** — tested against a real site with a real browser fingerprint, so you get the same answer the site would give.
 - **How fast is it — for *your* site?** — every proxy is timed end to end and ranked, so you can pull the fastest ones for production.
-- **What *is* it?** — ASN, network operator, connection type (cellular, datacenter, corporate, cable/DSL, satellite), and city/region for every working proxy.
+- **What is it?** — ASN, network operator, connection type (cellular, datacenter, corporate, cable/DSL, satellite), and city/region for every working proxy.
 - **Where are the bottlenecks?** — the timing is broken into four phases so you can see *why* a proxy is slow, not just *that* it is.
 
 It runs as a native desktop app on **Windows and macOS**, and is engineered to push enormous proxy lists through in a single run.
@@ -45,7 +45,7 @@ Every request is timed across the four things that happen on every proxied reque
 3. **Time to first reply** — how long the site takes to start responding.
 4. **Download time** — how long it takes to actually pull the data down.
 
-Each phase gets its own live histogram, so a slow proxy tells you *which* leg is the problem. See the [Proxy Tester Manual](docs/README.md) for a plain-English walkthrough of every graph.
+Each phase gets its own live histogram, so a slow proxy tells you *which* leg is the problem. Hover over the graph for a thorough explanation.
 
 ### Organized exports
 Results are written to a timestamped `results/` folder as you go — no waiting for the run to finish:
@@ -57,16 +57,16 @@ Results are written to a timestamped `results/` folder as you go — no waiting 
 
 ## Download
 
-Grab a prebuilt binary from the [**Releases**](https://github.com/hero-proxies/proxy-tester/releases/latest) page:
+Grab a prebuilt app from the [**Releases**](https://github.com/hero-proxies/proxy-tester/releases/latest) page:
 
 | Platform | File |
 |---|---|
-| Windows (x64) | `hero-proxy-tester-x86_64-pc-windows-msvc.exe` |
-| macOS (Apple Silicon) | `hero-proxy-tester-aarch64-apple-darwin` |
+| Windows (x64) | `Heroproxies.com Tester.exe` |
+| macOS (Universal) | `Heroproxies.com Tester-macos-universal.zip` |
 
 No install, no dependencies. Download, run, drop in your proxy list.
 
-> **macOS:** the binary is unsigned, so the first launch may need `System Settings → Privacy & Security → Open Anyway`, or run `xattr -d com.apple.quarantine ./hero-proxy-tester-*` once.
+> **macOS:** the app is unsigned, so the first launch may need `System Settings → Privacy & Security → Open Anyway`, or run `xattr -dr com.apple.quarantine "Heroproxies.com Tester.app"` once.
 >
 > **Windows:** on first run the app offers a one-time TCP tuning step so it can hold huge numbers of concurrent connections. It's optional — skip it and the tester still works.
 
@@ -89,7 +89,7 @@ Both HTTP and HTTPS proxies are supported (tested via HTTP `CONNECT` tunneling).
         the proxy                    first reply         time
 ```
 
-A great proxy is fast on **all four**. The dashboard shows you, at a glance, which proxies are — and which ones to throw away. Full guide: [docs/](docs/README.md).
+A great proxy is fast on **all four**. The dashboard shows you, at a glance, which proxies are — and which ones to throw away.
 
 ## About HeroProxies
 
